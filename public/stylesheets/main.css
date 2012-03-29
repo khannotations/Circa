@@ -1,0 +1,35 @@
+body {
+  background-color: crimson;
+}
+
+.crimson { color: crimson; }
+.crimson:hover{ color: OrangeRed; }
+.block{ display: block; }
+.hidden { display: none; }
+.big { font-size: 20px; }
+.blue { color: deepskyblue; }
+
+.like, .unlike {
+  cursor: pointer;
+  color: blue;
+}
+
+.unlike {
+  display: none;
+}
+
+.lightbox{
+  opacity:1;
+  width:598px;
+  height:530px;
+}   
+
+#safaribox{
+  width:473px;
+  height:699px;
+
+}
+#iebox{
+  width:473px;
+  height:699px;
+}

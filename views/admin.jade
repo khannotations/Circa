@@ -1,0 +1,130 @@
+script(type='text/javascript', src='/javascripts/admin.js')
+  #top
+      img#logo(src='./images/logo.png', alt='Circa Logo')
+      #namewrapper
+        #locname  yale
+        img#locarrow(src='./images/locarrow.png', alt='You\'re here. Right?')
+        img#qmark(src='./images/qmark.png', alt='?')
+        img#locerror(src='./images/locerror.png', alt='Whoops! Try refreshing the page a few times.', style='display: none;')
+      #subtext chat with the people around you.
+    #bar2
+      #pointercon
+        img#pointer(src='./images/pointer.png', alt='textPointer')
+      #bubblecon
+        img#bubble(src='./images/bubble.png', alt='textPointer')
+      #new_crush_box
+        textarea#new_post_body.defaultText(alt='Write Your Post Here.', name='post[content]', value='Write Your Post Here.') Write Your Post Here.
+        input#admin_user_id(type='text')
+        button#submit_admin_post Submit 
+    #radio
+      input(type='radio', name='room[name]', value='My Room')
+      label My Room
+      br
+      input(type='radio', name='room[name]', value='Saybrook')
+      label Saybrook
+      br
+      input(type='radio', name='room[name]', value='Berkeley South')
+      label Berkeley South
+      br
+      input(type='radio', name='room[name]', value='Davies Auditorium')
+      label Davies Auditorium
+      br
+      input(type='radio', name='room[name]', value='Sudler Hall')
+      label Sudler Hall
+      br
+      input(type='radio', name='room[name]', value='Dunham')
+      label Dunham
+      br
+      input(type='radio', name='room[name]', value='Sloane 59')
+      label Sloane 59
+      br
+      input(type='radio', name='room[name]', value='Sloane 57')
+      label Sloane 57
+      br
+      input(type='radio', name='room[name]', value='Loria 250')
+      label Loria 250
+      br
+      input(type='radio', name='room[name]', value='SCL 110')
+      label SCL 110
+      br
+      input(type='radio', name='room[name]', value='SSS 114')
+      label SSS 114
+      br
+      input(type='radio', name='room[name]', value='Blue State (Wall St.)')
+      label Blue State (Wall St.)
+      br
+      input(type='radio', name='room[name]', value='OML 202')
+      label OML 202
+      br
+      input(type='radio', name='room[name]', value='Luce Auditorium')
+      label Luce Auditorium
+      br
+      input(type='radio', name='room[name]', value='Mason 211')
+      label Mason 211
+      br
+      input(type='radio', name='room[name]', value='WHC 120')
+      label WHC 120
+      br
+      input(type='radio', name='room[name]', value='Sterling Reading Room')
+      label Sterling Reading Room
+      br
+      input(type='radio', name='room[name]', value='Music Library')
+      label Music Library
+      br
+      input(type='radio', name='room[name]', value='Below Sterling')
+      label Below Sterling
+      br
+      input(type='radio', name='room[name]', value='Bass Library')
+      label Bass Library
+      br
+      input(type='radio', name='room[name]', value='Bass Cafe')
+      label Bass Cafe
+      br
+      input(type='radio', name='room[name]', value='AA Library')
+      label AA Library
+      br
+      input(type='radio', name='room[name]', value='LC 101')
+      label LC 101
+      br
+      input(type='radio', name='room[name]', value='LC 102')
+      label LC 102
+      br
+      input(type='radio', name='room[name]', value='yale')
+      label yale
+      br
+      input(type='radio', name='room[name]', value='SLB Auditorium')
+      label SLB Aud
+      br
+      input(type='radio', name='room[name]', value='Stacks')
+      label Stacks
+      br
+      input(type='radio', name='room[name]', value='Kroon')
+      label Kroon
+      br
+      input(type='radio', name='room[name]', value='SLB 127')
+      label SLB 27
+      br
+      input(type='radio', name='room[name]', value='Society Reading Room')
+      label Soc reading room
+      br
+      input(type='radio', name='room[name]', value='Redfin')
+      label Redfin
+      br
+      br
+    #postlist
+      #tpostbox.postbox(style='display: none;')
+        h2.post_body
+        span.post_title
+        span.post_time
+        form(action='/admin!!5423', method='Post')
+          input.post_id(type='hidden', name='post[id]', val='0')
+          button(type='Submit') Destroy Post
+    #footer © Circa: Yale 2012 
+    #positions
+      #lat(style='display: none;')  
+      #lon(style='display: none;')  
+      #tol(style='display: none;')  
+      #username
+      | capt.starfish
+    //
+       WTG START 

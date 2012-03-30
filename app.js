@@ -25,7 +25,7 @@ app.configure(function () {
   app.use( express.bodyParser() );
   app.use( express.cookieParser());
   app.use( express.session({
-    secret: "loriab50"
+    secret: "secret"
   }));
   //app.use(express.session({ secret: "keyboard cat", store: new RedisStore }));
   app.use( express.methodOverride() );  
@@ -43,7 +43,6 @@ app.configure( 'development', function () {
 app.configure( 'production', function () {
   app.use(express.errorHandler() ); 
   var mongoose_uri = 'mongodb://circa:circa@ds031657.mongolab.com:31657/circa_test';
-	//var mongoose_uri = 'mongodb://circa:LoriaB50@ds031637.mongolab.com:31637/circa';
 	mongoose.connect( mongoose_uri );
 } );
 
